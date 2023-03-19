@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PizzaGeek</title>
+    <link rel="stylesheet" href="./Assets/css/reset.css">
+    <link rel="stylesheet" href="./Assets/css/styles.css">
+    <link rel="stylesheet" href="Assets/css/header/header.css">
+    <link rel="stylesheet" href="./Assets/css/main/main.css">
+    <style> @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');</style>
+</head>
+<body>
+
+    <header>
+        <div class="header__logo">
+            <img class="header__logo-img" src="./Assets/imagenes/JM.png" alt=""/>
+        </div>
+        <div class="header__buscador">
+            <input class="header__buscador-input" id="inputBuscar"type="text" placeholder="Busca tu pizza ideal!"/>
+            <button class="header__buscador-btn" id="buscarBtn"><img src="./Assets/imagenes/buscar.png" alt=""></button>
+            </div>
+        </div>
+        <div class="header__user">
+            <img class="header__user-img" id="user" src="./Assets/imagenes/usuario.png" alt="">
+        </div>
+        <div class="header__carrito">
+            <img class="header__carrito-img" src="./Assets/imagenes/carrito-de-compras.png" alt="">
+            <span class="header__carrito-span">1</span>
+        </div>
+    </header>
+
+    <main>
+        <div class="header__buscador-resultados" id="resultados"></div>
+    </main>
+
+    <footer>
+
+    </footer>
+    
+    <script src="index.js" type="module"></script>
+</body>
+</html>
