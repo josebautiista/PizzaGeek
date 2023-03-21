@@ -5,15 +5,19 @@ import { login } from "./Assets/components/objetos/login.js";
 import { Producto } from "./Assets/components/objetos/producto.js";
 
 
-login()
 const botonBuscar = document.getElementById('buscarBtn')
 const user = document.getElementById('user')
 const searchInput = document.getElementById('inputBuscar');
 const searchResults = document.getElementById('resultados');
+const main = document.querySelector('main')
+const sectionLogin = document.querySelector('.login')
+const sectionBuscar = document.querySelector('.main__buscador-resultados')
 
-buscar(searchInput,searchResults, botonBuscar)
+searchInput.addEventListener('click', ()=>{
+    buscar(searchInput,searchResults, botonBuscar, sectionLogin)
+})
 
 
 user.addEventListener('click', ()=>{
-    alert('hola')
+    login(main, sectionLogin, sectionBuscar)
 })

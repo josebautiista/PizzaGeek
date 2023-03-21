@@ -1,9 +1,8 @@
- main h1 {
-    text-align: center;
-    margin-top: 0;
-  }
-  
-  main form {
+body{
+  height: 100vh;
+  background: #EEBDBD;
+}
+  .login form {
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
@@ -12,7 +11,7 @@
     margin: 0 auto;
   }
   
-  main input[type=text], input[type=email], input[type=password] {
+  .login input[type=text], input[type=email], input[type=password] {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -22,8 +21,8 @@
     box-sizing: border-box;
   }
   
-  main input[type=submit] {
-    background-color: #4CAF50;
+  .login button[type=submit] {
+    background-color: red;
     color: #fff;
     padding: 12px 20px;
     border: none;
@@ -32,24 +31,30 @@
     font-size: 16px;
   }
   
-  main input[type=submit]:hover {
-    background-color: #45a049;
-  }
-  
-  main .container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  
-  main .container > div {
-    width: 48%;
+  .login button[type=submit]:hover {
+    background-color: #EEBDBD;
+    color: red;
   }
 
+  .login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 30px 0;
+    cursor: pointer;
+  }
 
   .titulo__login{
     display: flex;
-    justify-content: center;
-    margin: 20px 0;
-    
+    margin: 20px auto;
+    color: rgb(66, 46, 46);
+    font-weight: bold;
+  }
+
+  #login:hover{
+    text-decoration: underline;
+  }
+
+  #singup:hover{
+    text-decoration: underline;
   }
