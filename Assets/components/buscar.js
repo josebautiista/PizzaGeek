@@ -17,6 +17,8 @@ export const buscar = (buscador, resultados, boton)=>{
         const filteredData = data.filter(function(item) {
           return item.title.toLowerCase().includes(searchTerm) || item.description.toLowerCase().includes(searchTerm);
         });
+
+        document.querySelector('main').classList.add('buscador')
       
         displayResults(filteredData);
       });
@@ -27,9 +29,12 @@ export const buscar = (buscador, resultados, boton)=>{
           const li = document.createElement('li');
           li.style.listStyle='none'
           li.innerHTML = `
-            <h3>${item.title}</h3>
+            <h3 id='h3'>${item.title}</h3>
             <p>${item.description}</p>
           `;
+          li.addEventListener('click', ()=>{
+            alert('hola')
+          })
           resultados.appendChild(li);
         });
       
@@ -39,6 +44,10 @@ export const buscar = (buscador, resultados, boton)=>{
           li.textContent = 'No se encontraron resultados';
           resultados.appendChild(li);
         }
+
       }
+
+      
+    
 }
     
