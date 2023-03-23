@@ -1,8 +1,11 @@
-export const login = (main, section, sectionBuscar) => {
+import { ocultarTodo } from "./ocultarTodo.js"
 
+export const login = (main, section) => {
+
+
+    ocultarTodo()
     section.innerHTML=''
     section.style.display='flex'
-    sectionBuscar.style.display='none'
     
     const divTitulo = document.createElement('div')
     divTitulo.classList.add('titulo__login')
@@ -14,23 +17,23 @@ export const login = (main, section, sectionBuscar) => {
      <form id="inicioSesion">
 
         <label for="email">Email:</label>
-        <input type="email" id="email" name="email" placeholder="Escribe tu correo electrónico" required>
+        <input type="email" name="email" placeholder="Jhonwick@xxx.com" required>
 
         <label for="password">Contraseña:</label>
-        <input type="password" id="password" name="password" placeholder="Escribe tu contraseña" required>
+        <input type="password" name="password" placeholder="Contraseña" required>
 
         <button type="submit">Iniciar Sesión</button>
         </form>
 
         <form id="registrar">
         <label for="name">Nombre:</label>
-        <input type="text" id="name" name="name" placeholder="Escribe tu nombre completo" required>
+        <input type="text" id="name" name="name" placeholder="Jhon wick" required>
 
         <label for="email">Email:</label>
-        <input type="email" id="email" name="email" placeholder="Escribe tu correo electrónico" required>
+        <input type="email" name="email" placeholder="Jhonwick@xxx.com" required>
 
         <label for="password">Contraseña:</label>
-        <input type="password" id="password" name="password" placeholder="Escribe tu contraseña" required>
+        <input type="password" name="password" placeholder="Contraseña" required>
 
         <label for="confirm-password">Confirmar Contraseña:</label>
         <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirma tu contraseña" required>

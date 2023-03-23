@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="Assets/css/header/header.css">
     <link rel="stylesheet" href="./Assets/css/main/main.css">
     <link rel="stylesheet" href="./Assets/css/main/login.css">
+    <link rel="stylesheet" href="./Assets/css/home/home.css">
+    <link rel="stylesheet" href="./Assets/css/carrito/carrito.css">
     <style> @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');</style>
 </head>
 <body>
@@ -23,6 +25,7 @@
             <button class="header__buscador-btn" id="buscarBtn"><img src="./Assets/imagenes/buscar.png" alt=""></button>
             </div>
         </div>
+        <div class="user-container">
         <div class="header__user">
             <img class="header__user-img" id="user" src="./Assets/imagenes/usuario.png" alt="">
         </div>
@@ -30,11 +33,18 @@
             <img class="header__carrito-img" src="./Assets/imagenes/carrito-de-compras.png" alt="">
             <span class="header__carrito-span">1</span>
         </div>
+        </div>
     </header>
 
     <main>
-        <div class="main__buscador-resultados" id="resultados"></div>
+        <section class="main__buscador-resultados" id="resultados"></section>
+
         <section class="login"></section>
+
+        <section id="home" class="home"></section>
+        
+        <section id="carrito" class="carrito"> 
+        </section>
     </main>
 
     <footer>

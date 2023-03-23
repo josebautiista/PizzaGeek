@@ -1,5 +1,6 @@
+import { ocultarTodo } from "./ocultarTodo.js";
 
-export const buscar = (buscador, resultados, boton, sectionLogin)=>{
+export const buscar = (buscador, resultados, boton)=>{
 
     const data = [
         {id: 1, title: "Hawaina", description: "Queso, Piña y jamon"},
@@ -8,6 +9,7 @@ export const buscar = (buscador, resultados, boton, sectionLogin)=>{
       ];
       
       boton.addEventListener('click', function() {
+        ocultarTodo()
         resultados.style.display='flex'
         const searchTerm = buscador.value.toLowerCase();
         const filteredData = data.filter(function(item) {
@@ -15,7 +17,6 @@ export const buscar = (buscador, resultados, boton, sectionLogin)=>{
         });
         
         buscador.value=''
-        sectionLogin.style.display='none'
         displayResults(filteredData);
       });
       
