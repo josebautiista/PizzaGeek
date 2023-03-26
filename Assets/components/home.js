@@ -1,3 +1,4 @@
+import { crearProductos } from "./crearProductos.js"
 import { ocultarTodo } from "./ocultarTodo.js"
 
 export const home = (section)=>{
@@ -25,5 +26,6 @@ export const home = (section)=>{
    
    section.appendChild(sectionCarrusel)
 
+   crearProductos(section)
 
 }   
